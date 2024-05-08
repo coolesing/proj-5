@@ -1,0 +1,31 @@
+.head {
+  height: 799px;
+  width: 320px;
+  background-image: url(./img/hero-background.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 320px;
+}
+.b{
+  height: 303px;
+  width: 320px;
+  background-image: url(./img/putting-phone-in-aro.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aro-button{
+  height: 177px;
+  width: 320px;
+  background-image: url(./img/background-aro.webp);
+  background-position:center ;
+  background-size:cover ;
+  background-repeat: no-repeat;
+}
+.contacts{
+  background-color: #24160B;
+  color: #FFFFFF;
+}
