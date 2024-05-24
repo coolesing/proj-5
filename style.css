@@ -1,3 +1,6 @@
+body {
+  font-style: "Roboto", sans-serif;
+}
 .head {
   height: 799px;
   width: 320px;
@@ -56,6 +59,7 @@
   line-height: 2.55;
   text-align: left;
 }
+
 .aro-basics {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
@@ -331,7 +335,7 @@ div {
   font-size: 12px;
   line-height: 1.25; /* 125% */
 }
-.button-action{
+.button-action {
   width: 320px;
   display: flex;
   justify-content: center;
@@ -345,13 +349,45 @@ div {
   align-items: center;
   justify-content: center;
 }
-.img-family-background{
+.img-family-background {
   background-image: url(./img/./family-photo-aro.webp);
   width: 233px;
   height: 152px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.media-list-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+.media-list-2-item {
+  position: relative;
+  text-align: center;
+}
+.media-list-2-item img {
+  width: 100%;
+  transition: opacity 0.3s;
+}
+.media-list-2-item .text-item {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 130px;
+}
+.media-list-2-item.faded img {
+  opacity: 0.3;
+}
+.media-list-2-item.faded .text-item {
+  display: block;
 }
 @media (min-width: 768px) {
   section {
@@ -391,12 +427,8 @@ div {
     font-size: 17px;
     line-height: 1.8; /* 180% */
   }
-  .aro-introduction-div {
+  .introducting-list {
     width: 768px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: end;
   }
   .a-background {
     width: 768px;
@@ -417,7 +449,16 @@ div {
     font-size: 17px;
     line-height: 2.33; /* 232.941% */
   }
-
+  .aro-introduction-div:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .aro-introduction-div:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
   .a-background-video {
     width: 128px;
     height: 128px;
