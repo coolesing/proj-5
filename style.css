@@ -105,19 +105,20 @@ body {
   border-radius: 80px;
   background: #efae35;
 }
-
 .Featuring {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .Featured-In {
   width: 41px;
+}
+.featured-list {
 }
 .intoducment-list {
   display: flex;
   flex-direction: column;
 }
-
 .a-background {
   width: 320px;
   height: 303px;
@@ -155,7 +156,7 @@ body {
   flex-shrink: 0;
 }
 .a-background-video-text {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-size: 15px;
   line-height: 1.46; /* 146.667% */
 }
@@ -165,15 +166,20 @@ body {
   flex-wrap: wrap;
 }
 .a-list-item-text1 {
-  max-width: 135px;
+  width: 135px;
+  font-size: 11px;
+  line-height: 1.64; /* 163.636% */
+}
+.a-list {
+  color: #24160b;
 }
 .a-list-item-title {
-  color: rgb(36, 22, 11);
   font-size: 43px;
-  line-height: 1.07; /* 106.977% */
-  width: 217px;
-  height: 92px;
-  margin: 0;
+  line-height: 1.33; /* 133.023% */
+}
+.a-list-item-title:first-child {
+  font-size: 43px;
+  line-height: 1.06; /* 106.977% */
 }
 .a-list-item-title2 {
   color: rgb(36, 22, 11);
@@ -184,20 +190,20 @@ body {
 .a-list-item-title3 {
   color: rgb(36, 22, 11);
   font-size: 43px;
-
   line-height: 1.33; /* 133.023% */
 }
-
+.a-list-item-foto {
+  width: 142px;
+  height: 140px;
+}
 .a-list-item-text2 {
   color: rgb(36, 22, 11);
   font-size: 11px;
-
   line-height: 1.63; /* 163.636% */
 }
 .a-list-item-text3 {
   color: rgb(36, 22, 11);
   font-size: 11px;
-
   line-height: 1.63; /* 163.636% */
 }
 .a-list-item-foto1 {
@@ -255,6 +261,7 @@ body {
   line-height: 1.22;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .contacts-list-item {
   max-width: 96px;
@@ -397,6 +404,13 @@ body {
   font-size: 10px;
   line-height: 1.1;
 }
+.Extra-linkk {
+  width: 70px;
+  height: 18px;
+  border-radius: 80px;
+  background: #f5f8fa;
+  box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.07);
+}
 .media-list-2-item.faded img {
   opacity: 0.3;
 }
@@ -424,7 +438,7 @@ body {
   .container {
     width: 768px;
   }
-  F .aro-background {
+  .aro-background {
     background-image: url(./img/family-in-tent-background.webp);
     width: 100%;
     background-position: center;
@@ -436,7 +450,6 @@ body {
   }
   .nav-hide {
     color: #222;
-
     font-size: 17px;
     line-height: 1.48;
     display: flex;
@@ -444,9 +457,16 @@ body {
   }
   .intoduction {
     color: #000;
-
     font-size: 60px;
     line-height: 1.2;
+  }
+  .aro-button {
+    width: 677px;
+    height: 412px;
+    margin-left: 46px;
+    margin-right: 45px;
+    margin-bottom: 121px;
+    margin-top: 161px;
   }
   .introduction-text {
     color: #000;
@@ -460,6 +480,18 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .contacts-list {
+    width: 768px;
+    height: 549px;
+  }
+  .contacts-list-item{
+    width: 202px;
+    gap: 25px;
+  }
+  .contacts-list-item-text {
+    font-size: 18px;
+    line-height: 1.7; /* 170% */
+  }
   .a-background-title {
     width: 442px;
     font-size: 58px;
@@ -471,9 +503,15 @@ body {
     font-size: 17px;
     line-height: 2.33; /* 232.941% */
   }
+  .a-list-item-parts {
+  }
   .a-background-video {
     width: 128px;
     height: 128px;
+  }
+  .Extra-linkk {
+    width: 148px;
+    height: 41px;
   }
   .a-background-video-triangle {
     width: 18px;
@@ -507,6 +545,13 @@ body {
     height: 305px;
     border-radius: 16px;
     background: url(2.2.jpg);
+  }
+  .featured-list-item img {
+    width: 81px;
+    height: 33px;
+  }
+  .featured {
+    gap: 77px;
   }
   .a-list-item-foto3 {
     width: 333px;
@@ -566,13 +611,20 @@ body {
     flex-shrink: 0;
     background-image: url(./img/background1200.jpg);
   }
-
+  .Extra-linkk {
+    width: 225px;
+    height: 57px;
+  }
   .a-list-item-title {
     width: 373px;
     font-size: 43px;
     line-height: 1.33; /* 133.023% */
   }
-
+  .featured {
+    gap: 80px;
+    justify-content: center;
+    max-width: 840px;
+  }
   .a-list-item-text1 {
     width: 448px;
     font-size: 18px;
@@ -595,13 +647,21 @@ body {
   .a-list-item-foto2 {
     width: 458px;
     height: 305px;
-    flex-shrink: 0;
     background-image: url(./3.2.jpg);
+  }
+  .Featuring {
+    width: 840px;
   }
   .a-list-item-text2 {
     width: 454px;
     font-size: 18px;
     line-height: 1.7; /* 170% */
+  }
+  .aro-button {
+    margin-bottom: 137px;
+    margin-top: 140px;
+    margin-left: 90px;
+    margin-right: 90px;
   }
   .a-list-item-title3 {
     width: 411px;
